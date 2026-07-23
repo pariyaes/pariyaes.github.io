@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pariya Eskandari | Genetics & Bioinformatics</title>
+
+  <meta name="description"
+        content="Academic portfolio of Pariya Eskandari, MSc Genetics, with interests in human genetics, rare disease genomics, transcriptomics and bioinformatics.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: #263238;
+      background: #f8fafb;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #e7ecef;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav .name {
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #455a64;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00695c;
+    }
+
+    .hero {
+      padding: 100px 8% 90px;
+      background: white;
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 8px;
+      color: #1d2b32;
+    }
+
+    .degree {
+      font-size: 19px;
+      color: #546e7a;
+      margin-bottom: 25px;
+    }
+
+    .research-line {
+      font-size: 20px;
+      color: #00695c;
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 17px;
+      color: #455a64;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 30px;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #263238;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tag {
+      background: white;
+      padding: 10px 16px;
+      border-radius: 25px;
+      border: 1px solid #dce5e8;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #e4eaed;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #00695c;
+    }
+
+    .card p {
+      color: #546e7a;
+      font-size: 15px;
+    }
+
+    .skills {
+      line-height: 2;
+      color: #455a64;
+    }
+
+    .contact {
+      background: white;
+      text-align: center;
+      max-width: none;
+    }
+
+    .contact p {
+      margin-bottom: 12px;
+    }
+
+    .contact a {
+      color: #00695c;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #78909c;
+      font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav .links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="name">Pariya Eskandari</div>
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <h1>Pariya Eskandari</h1>
+
+      <p class="degree">
+        MSc Biology – Genetics
+      </p>
+
+      <p class="research-line">
+        Human Genetics · Rare Disease Genomics · Transcriptomics · Bioinformatics
+      </p>
+
+      <p class="intro">
+        My research interests lie at the intersection of human genetics,
+        molecular genetics, genomics and transcriptomics. I have experience
+        in molecular genetics and Sanger sequencing and have expanded my
+        research training into WES/WGS analysis, bulk RNA-seq, single-cell
+        transcriptomics, R and Linux-based bioinformatics workflows.
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <section id="research">
+
+    <h2>Research Interests</h2>
+
+    <div class="interests">
+
+      <span class="tag">Human Genetics</span>
+      <span class="tag">Rare Disease Genomics</span>
+      <span class="tag">Neurogenetics</span>
+      <span class="tag">Transcriptomics</span>
+      <span class="tag">RNA Biology</span>
+      <span class="tag">Epigenetics</span>
+      <span class="tag">WES / WGS</span>
+      <span class="tag">Single-cell RNA-seq</span>
+      <span class="tag">Bioinformatics</span>
+
+    </div>
+
+  </section>
+
+
+  <section id="projects">
+
+    <h2>Selected Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+
+        <h3>IPAH Transcriptomics</h3>
+
+        <p>
+          Transcriptomic analysis of idiopathic pulmonary arterial
+          hypertension, including differential expression analysis,
+          batch-effect assessment, data integration and biomarker
+          investigation.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>TNBC Single-Cell Transcriptomics</h3>
+
+        <p>
+          Single-cell RNA-seq analysis of triple-negative breast cancer,
+          including cell-type analysis, cell-cell communication and
+          validation using TCGA data.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>Rare Disease Variant Analysis</h3>
+
+        <p>
+          Case-based training in whole-exome sequencing for Mendelian
+          disorders, including variant filtering, annotation,
+          prioritisation and clinical interpretation.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="skills">
+
+    <h2>Technical Skills</h2>
+
+    <p class="skills">
+
+      <strong>Bioinformatics:</strong>
+      R, Linux, DESeq2, edgeR, limma, Seurat, CellChat,
+      HISAT2, featureCounts, FastQC, samtools
+      <br>
+
+      <strong>Genomics:</strong>
+      WES/WGS analysis, variant filtering and prioritisation,
+      Sanger sequence analysis
+      <br>
+
+      <strong>Transcriptomics:</strong>
+      Bulk RNA-seq, differential expression analysis,
+      scRNA-seq, pathway analysis and data visualisation
+      <br>
+
+      <strong>Molecular Genetics:</strong>
+      PCR, DNA analysis, gel electrophoresis and Sanger sequencing
+
+    </p>
+
+  </section>
+
+
+  <section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+      Email:
+      <a href="mailto:pariyaeskandari78@gmail.com">
+        pariyaeskandari78@gmail.com
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/pariyaes">
+        github.com/pariyaes
+      </a>
+    </p>
+
+  </section>
+
+
+  <footer>
+    © 2026 Pariya Eskandari
+  </footer>
+
+</body>
+
+</html>
