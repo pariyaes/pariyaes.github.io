@@ -221,6 +221,54 @@
   text-align: center;
   max-width: none;
 }
+
+    /* About section with profile photo */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 38px;
+  align-items: start;
+}
+
+.profile-photo {
+  width: 240px;
+  height: 270px;
+  display: block;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 12px;
+  border: 1px solid #e4eaed;
+  box-shadow: 0 6px 18px rgba(38, 50, 56, 0.08);
+}
+
+.about-text {
+  min-width: 0;
+}
+
+.about-text p {
+  color: #455a64;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 250px;
+    margin: 0 auto;
+  }
+}
   </style>
 </head>
 
