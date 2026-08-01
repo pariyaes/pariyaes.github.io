@@ -269,6 +269,125 @@
     margin: 0 auto;
   }
 }
+    /* Refined hero section */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 78px 8% 72px;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f7f6 100%);
+  border-bottom: 1px solid #e4eceb;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: rgba(0, 105, 92, 0.055);
+  top: -170px;
+  right: -90px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-kicker {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #e6f2f0;
+  color: #00695c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.hero h1 {
+  margin-bottom: 8px;
+  color: #1d2b32;
+  font-size: 52px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.degree {
+  margin-bottom: 20px;
+  color: #546e7a;
+  font-size: 19px;
+}
+
+.research-line {
+  margin-bottom: 22px;
+  color: #00695c;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.intro {
+  max-width: 720px;
+  color: #455a64;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+/* Refined About section */
+
+.about-card {
+  padding: 30px 32px;
+  background: white;
+  border: 1px solid #e1e8ea;
+  border-left: 4px solid #00695c;
+  border-radius: 10px;
+  box-shadow: 0 7px 22px rgba(38, 50, 56, 0.05);
+}
+
+.about-card p {
+  margin-bottom: 18px;
+  color: #455a64;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding: 65px 8% 60px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .research-line {
+    font-size: 17px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+}
   </style>
 </head>
 
@@ -313,13 +432,9 @@
   </header>
     <section id="about">
   <h2>About Me</h2
-                  <div class="about-layout">
-
-    <img
-      src="images/pariya-eskandari-profile.png"
-      alt="Professional portrait of Pariya Eskandari"
-      class="profile-photo"
-    >
+                 .about-layout {
+  display: block;
+}
 
     <div class="about-text">
 
