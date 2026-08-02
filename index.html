@@ -186,32 +186,60 @@
   border: 2px solid #8cbeb6;
 }
 
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
-}
+/* Technical skills */
 
-.skill-card {
+.skills-panel {
   background: white;
-  padding: 22px;
-  border-radius: 10px;
+  padding: 8px 30px;
   border: 1px solid #e4eaed;
+  border-left: 4px solid #00695c;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(38, 50, 56, 0.05);
 }
 
-.skill-card h3 {
+.skill-row {
+  padding: 22px 0;
+  border-bottom: 1px solid #e7ecef;
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+.skill-row h3 {
   color: #00695c;
-  margin-bottom: 12px;
   font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.skill-card p {
+.skill-row p {
   color: #546e7a;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
+.skill-row p:last-child {
+  margin-bottom: 0;
+}
+
+.skill-tools {
+  color: #607d8b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+  .skills-panel {
+    padding: 5px 22px;
+  }
+
+  .skill-row {
+    padding: 19px 0;
+  }
+}
+
+    
 .skill-card p:last-child {
   margin-bottom: 0;
 }
@@ -568,38 +596,6 @@
   </div>
 </section>
 
-
-  <section id="skills">
-
-    <h2>Technical Skills</h2>
-
-    <p class="skills">
-
-      <strong>Bioinformatics:</strong>
-      R, Linux, DESeq2, RNA-seq preprocessing and analysis, FastQC,
-      Trimmomatic, HISAT2, samtools, featureCounts
-      <br>
-
-      <strong>Genomics:</strong>
-     WES analysis, variant filtering and prioritisation,
-Mendelian disease variant interpretation, Sanger sequence analysis
-      <br>
-
-      <strong>Transcriptomics:</strong>
-      Bulk RNA-seq differential expression analysis,
-TCGA-based validation, pathway analysis and data visualisation;
-comprehensive training in single-cell RNA-seq
-      <br>
-
-      <strong>Molecular Genetics:</strong>
-     Genomic DNA extraction, PCR, agarose gel electrophoresis,
-SSCP
-
-    </p>
-
-  </section>
-
-
   <section id="contact" class="contact">
 
     <h2>Contact</h2>
@@ -637,65 +633,67 @@ SSCP
 </html>
 <section id="skills">
   <h2>Technical Skills</h2>
+  
+  <div class="skills-panel">
 
-  <div class="skill-grid">
-
-    <div class="skill-card">
+    <div class="skill-row">
       <h3>Transcriptomics</h3>
       <p>
         RNA-seq quality control, trimming, alignment, gene-count generation,
         differential-expression workflows, visualization, and biological
         interpretation.
       </p>
-      <p>
+      <p class="skill-tools">
         FastQC · Trimmomatic · HISAT2 · samtools · featureCounts · DESeq2 ·
         edgeR · limma
       </p>
     </div>
 
-    <div class="skill-card">
-      <h3>Immune Deconvolution</h3>
+    <div class="skill-row">
+      <h3>Immune-Cell Infiltration Analysis</h3>
       <p>
-        CIBERSORTx LM22 output processing, metadata integration,
-        disease- and sex-stratified comparisons, Benjamini–Hochberg
-        correction, Cliff's delta, and immune-composition visualization.
+        CIBERSORTx LM22 output processing, metadata integration, disease- and
+        sex-stratified immune-cell comparisons, Benjamini–Hochberg correction,
+        Cliff’s delta effect-size analysis, and immune-composition
+        visualization.
       </p>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-row">
       <h3>Genomics &amp; Variant Analysis</h3>
       <p>
-        WES variant filtering, prioritization, clinical interpretation, and
-        report preparation; clinical Sanger chromatogram analysis and variant
-        interpretation; TCGA and GEO data resources.
+        WES variant filtering, prioritization, phenotype-informed
+        interpretation, and report preparation; clinical Sanger chromatogram
+        analysis and variant interpretation; TCGA and GEO data resources.
       </p>
-      <p>
-        WGS analysis: course-based training.
+      <p class="skill-tools">
+        WGS analysis through course-based training.
       </p>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-row">
       <h3>Single-Cell Analysis</h3>
       <p>
-        Course-based single-cell RNA-seq training using Seurat and CellChat,
-        with ongoing application in a collaborative TNBC and TCGA project.
+        Comprehensive course-based single-cell RNA-seq training using Seurat
+        and CellChat, with ongoing application in a collaborative TNBC and
+        TCGA-BRCA project.
       </p>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-row">
       <h3>Programming &amp; Visualization</h3>
-      <p>
+      <p class="skill-tools">
         R · Linux/Ubuntu · Bash · WSL2 · ggplot2 · pheatmap ·
         EnhancedVolcano · Cytoscape
       </p>
     </div>
 
-    <div class="skill-card">
+    <div class="skill-row">
       <h3>Molecular Genetics</h3>
       <p>
-        DNA and RNA extraction, primer design, PCR, RT-PCR, RT-qPCR,
-        Multiplex PCR, Tetra-ARMS PCR, agarose gel electrophoresis,
-        SSCP analysis, and silver staining.
+        DNA and RNA extraction · Primer design · PCR · RT-PCR/RT-qPCR ·
+        Multiplex PCR · Tetra-ARMS PCR · Agarose gel electrophoresis ·
+        SSCP analysis · Silver staining
       </p>
     </div>
 
